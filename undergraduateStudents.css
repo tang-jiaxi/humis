@@ -1,0 +1,168 @@
+body {
+  background-color: #535659;
+  margin: 0px;
+}
+
+.container {
+  border: 1px solid gray;
+  width: 780px;
+  margin: 0 auto; /*centers box horizontally*/
+  font-family: 'Mulish', sans-serif; /*use Mulish as default, if no mulish fall back to system sans-serif*/
+  color: #221f20;
+  background-color: white;
+  font-weight: 600;
+  letter-spacing: 0.015rem;
+  min-height: 700px;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  height: 700px;
+}
+
+/*All links*/
+a{
+  text-decoration: none;
+  color: black;
+  text-wrap: nowrap;
+
+  img{
+    vertical-align: middle;
+    height: 0.9rem;
+  }
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+/*---MAIN CONTENT-------------------------------------------------------------*/
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 1.5rem;
+
+  h1 {
+    color: #b32a35;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.15rem;
+  }
+
+  h1:after{
+    content: "";
+    display: block;
+    border-bottom: 0.6rem solid #b32a35;
+    margin-top: -0.55rem;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+
+  .undergradLinks {
+    border-right: 1px dashed black;
+    padding: 0 1rem 0 0.5rem;
+    font-size: 0.65rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.02rem;
+  }
+
+  .intro {
+    padding: 0 1rem;
+    font-size: 0.74rem;
+    line-height: 0.8rem;
+    text-align: justify;
+
+    img {
+      border-radius: 1rem;
+    }
+
+    a {
+      text-transform: uppercase;
+      font-weight: bolder;
+      color: #b32a35;
+      font-size: 0.6rem;
+    }
+  }
+}
+
+footer {
+  background-color: #747a3e;
+  color: white;
+  font-size: 0.5rem;
+  text-align: center;
+  padding: 5px 0;
+  font-weight: 400;
+}
+
+/*---NAV STUFF-------------------------------------------------------------*/
+aside.nav {
+  background-color: #f0f0f0;
+  border-right: 2px #c2d08a solid;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+
+  a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: left;
+    padding: 0.5rem;
+    border-bottom: 1px #747a3e solid;
+  }
+
+  span:not(:last-child):after {
+    content: '';
+    display: block;
+  }
+
+  .login{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+    background: unset;
+    margin-top: auto;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.25rem 1rem;
+
+  span:not(:last-child):after {
+    content: "|";
+    font-weight: 400;
+    font-size: inherit;
+    margin: 0 0.25rem;
+  }
+}
+
+.top span {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+}
+
+.bot span{
+  font-size: 0.5rem;
+  text-transform: lowercase;
+}
+
+.bot {
+  margin-top: auto;
+}
