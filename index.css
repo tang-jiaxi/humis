@@ -127,6 +127,10 @@ aside.nav {
     border-bottom: 1px #747a3e solid;
   }
 
+  a:hover {
+    text-decoration: underline;
+  }
+
   span:not(:last-child):after {
     content: '';
     display: block;
